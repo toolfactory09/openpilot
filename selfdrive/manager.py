@@ -406,7 +406,7 @@ def send_managed_process_signal(name, sig):
 
 def manager_init(should_register=True):
   if should_register:
-    reg_res = register()
+    reg_res = register(spinner)
     if reg_res:
       dongle_id = reg_res
     else:
